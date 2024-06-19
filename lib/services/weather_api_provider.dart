@@ -7,7 +7,7 @@ import '../models/weather.dart';
 class WeatherProvider {
   Future<Weather> getWeather() async {
     var url = Uri.parse(
-        'https://api.openweathermap.org/data/2.5/weather?appid=0c2d6189e0ec193fc49c5fffd923c75c&q=kyiv&units=metric');
+        'https://api.openweathermap.org/data/2.5/weather?appid=0c2d6189e0ec193fc49c5fffd923c75c&q=kyiv&units=metric&lang=ua');
     final response = await http.get(url);
     print(response.statusCode);
     if (response.statusCode == 200) {

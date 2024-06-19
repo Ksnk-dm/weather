@@ -21,7 +21,7 @@ class WeatherList extends StatelessWidget {
 
         if (state is WeatherLoadedState) {
           return Container(
-            child: Center(child: Text('${state.loadedWeather.name} temp: ${state.loadedWeather.main.temp}'))
+            child: Center()
 
 
             // ListView.builder(
